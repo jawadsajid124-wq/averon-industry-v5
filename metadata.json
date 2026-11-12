@@ -1,0 +1,6 @@
+{
+  "name": "AVERON INDUSTRY",
+  "description": "ELEVATE YOUR PRESENCE. Luxury timepieces, leather goods, eyewear, haute parfumerie, and bespoke accessories with cutting-edge engineering and timeless prestige.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

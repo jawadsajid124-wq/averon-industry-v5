@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-tech {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Metallic Silver Gradients & Text */
+.text-metallic {
+  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 25%, #94a3b8 50%, #ffffff 80%, #64748b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-electric {
+  background: linear-gradient(135deg, #38bdf8 0%, #00f0ff 40%, #0077ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-electric {
+  border-color: rgba(0, 240, 255, 0.4);
+}
+
+.shadow-electric {
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.25), inset 0 0 15px rgba(0, 240, 255, 0.1);
+}
+
+.shadow-electric-lg {
+  box-shadow: 0 0 45px rgba(0, 240, 255, 0.35), 0 0 100px rgba(0, 102, 255, 0.2);
+}
+
+/* Luxury card glass effect */
+.luxury-glass {
+  background: rgba(14, 18, 27, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.luxury-glass:hover {
+  border-color: rgba(0, 240, 255, 0.3);
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08090d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00f0ff;
+}
+
+/* Keyframes for subtle background cyber mesh and pulse */
+@keyframes cyberGlow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.05); }
+}
+
+.animate-cyber-glow {
+  animation: cyberGlow 6s ease-in-out infinite;
+}

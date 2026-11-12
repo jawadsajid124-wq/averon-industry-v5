@@ -1,0 +1,286 @@
+{
+  "entities": {
+    "SystemOwnership": {
+      "title": "System Ownership",
+      "description": "Document tracking the dual equal Super Owner system and verification identities",
+      "type": "object",
+      "properties": {
+        "claimed": {
+          "type": "boolean",
+          "description": "Whether ownership has been established"
+        },
+        "owner1Uid": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "UID of Super Owner 1 (Gmail)"
+        },
+        "owner1Email": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "Gmail of Super Owner 1"
+        },
+        "owner2Uid": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "UID of Super Owner 2 (Phone)"
+        },
+        "owner2Phone": {
+          "type": "string",
+          "maxLength": 64,
+          "description": "Phone number of Super Owner 2"
+        },
+        "ownerUid": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "UID of primary verified Super Owner"
+        },
+        "ownerEmail": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "Email of primary Super Owner"
+        },
+        "claimedAt": {
+          "type": "string",
+          "description": "Timestamp when ownership was secured"
+        }
+      },
+      "required": ["claimed", "claimedAt"]
+    },
+    "SuperOwnerRole": {
+      "title": "Super Owner Role",
+      "description": "Role document granting irrevocable Super Owner privileges",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "User UID"
+        },
+        "email": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "Owner email address"
+        },
+        "role": {
+          "type": "string",
+          "enum": ["SUPER_OWNER"],
+          "description": "Role identifier"
+        },
+        "assignedAt": {
+          "type": "string",
+          "description": "Timestamp when role was assigned"
+        }
+      },
+      "required": ["uid", "email", "role", "assignedAt"]
+    },
+    "TeamMember": {
+      "title": "Team Member",
+      "description": "Invited administrator or executive owner with role credentials",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "email": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "Gmail address of the team member"
+        },
+        "role": {
+          "type": "string",
+          "enum": ["ADMIN", "OWNER"],
+          "description": "Assigned administrative role"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["ACTIVE", "INVITED", "REVOKED"],
+          "description": "Account status"
+        },
+        "invitedBy": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "Email of the inviting Super Owner"
+        },
+        "invitedAt": {
+          "type": "string",
+          "description": "Timestamp when invitation was extended"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Timestamp of latest role/status change"
+        }
+      },
+      "required": ["email", "role", "status", "invitedBy", "invitedAt"]
+    },
+    "Product": {
+      "title": "Product",
+      "description": "Curated luxury piece in the AVERON catalog",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "maxLength": 160,
+          "description": "Piece name"
+        },
+        "category": {
+          "type": "string",
+          "maxLength": 64,
+          "description": "Product category"
+        },
+        "price": {
+          "type": "number",
+          "description": "Price in USD"
+        },
+        "originalPrice": {
+          "type": "number",
+          "description": "Optional original price"
+        },
+        "image": {
+          "type": "string",
+          "description": "Product image URL or data"
+        },
+        "badge": {
+          "type": "string",
+          "maxLength": 64,
+          "description": "Badge description"
+        },
+        "stock": {
+          "type": "number",
+          "description": "Vault stock available"
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 2000,
+          "description": "Piece narrative and description"
+        },
+        "featured": {
+          "type": "boolean",
+          "description": "Whether displayed on hero"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Creation timestamp"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Update timestamp"
+        }
+      },
+      "required": ["name", "category", "price", "stock", "image", "description"]
+    },
+    "BoutiqueSettings": {
+      "title": "Boutique Settings",
+      "description": "Store configuration and public contacts",
+      "type": "object",
+      "properties": {
+        "brandName": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "tagline": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "phone": {
+          "type": "string",
+          "maxLength": 64
+        },
+        "intlPhone": {
+          "type": "string",
+          "maxLength": 64
+        },
+        "email": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "supportEmail": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "address": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "flagship2": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "announcement": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "currency": {
+          "type": "string",
+          "maxLength": 16
+        },
+        "taxRate": {
+          "type": "number"
+        },
+        "whatsapp": {
+          "type": "string",
+          "maxLength": 64
+        },
+        "whatsappCountryCode": {
+          "type": "string",
+          "maxLength": 16
+        },
+        "whatsappChatUrl": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "showPublicContact": {
+          "type": "boolean"
+        },
+        "deliveryCountry": {
+          "type": "string",
+          "maxLength": 64
+        },
+        "deliveryArea": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "deliveryAvailability": {
+          "type": "string",
+          "maxLength": 64
+        },
+        "blockInternationalOrders": {
+          "type": "boolean"
+        }
+      },
+      "required": ["brandName", "tagline", "phone", "email"]
+    }
+  },
+  "firestore": {
+    "/system/ownership": {
+      "schema": {
+        "$ref": "#/entities/SystemOwnership"
+      },
+      "description": "Singleton state of first super owner claiming"
+    },
+    "/roles_super_owner/{uid}": {
+      "schema": {
+        "$ref": "#/entities/SuperOwnerRole"
+      },
+      "description": "Super owner privilege records"
+    },
+    "/team_members/{memberId}": {
+      "schema": {
+        "$ref": "#/entities/TeamMember"
+      },
+      "description": "Team management roster governed by the Super Owner"
+    },
+    "/products/{productId}": {
+      "schema": {
+        "$ref": "#/entities/Product"
+      },
+      "description": "Curated luxury pieces"
+    },
+    "/settings/boutique": {
+      "schema": {
+        "$ref": "#/entities/BoutiqueSettings"
+      },
+      "description": "Boutique global configuration"
+    }
+  }
+}

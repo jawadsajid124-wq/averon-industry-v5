@@ -1,0 +1,318 @@
+{
+  "settings": {
+    "brandName": "AVERON INDUSTRY",
+    "tagline": "ELEVATE YOUR PRESENCE",
+    "phone": "+92 305 6674374",
+    "intlPhone": "+92 305 6674374",
+    "whatsapp": "+92 305 6674374",
+    "whatsappCountryCode": "+92",
+    "whatsappChatUrl": "https://wa.me/923056674374",
+    "showPublicContact": true,
+    "deliveryCountry": "Pakistan",
+    "deliveryArea": "All eligible locations across Pakistan",
+    "deliveryAvailability": "Pakistan only",
+    "blockInternationalOrders": true,
+    "email": "concierge@averonindustry.com",
+    "supportEmail": "vip.desk@averonindustry.com",
+    "address": "",
+    "flagship2": "",
+    "announcement": "ELEVATE YOUR PRESENCE — DELIVERY AVAILABLE ALL OVER PAKISTAN",
+    "currency": "USD",
+    "taxRate": 0.08,
+    "ownerEmail": "jawadsajid274@gmail.com"
+  },
+  "categories": [
+    "All",
+    "Watches",
+    "Wallets",
+    "Sunglasses",
+    "Perfumes",
+    "Accessories"
+  ],
+  "products": [],
+  "orders": [
+    {
+      "id": "ord-1794485316383",
+      "orderNumber": "AVR-54992",
+      "createdAt": "2026-11-12T12:08:36.383Z",
+      "customer": {
+        "name": "Test Client",
+        "email": "client2@example.com",
+        "phone": "+923009999999",
+        "address": "F-6/2",
+        "city": "Islamabad",
+        "province": "Islamabad Capital Territory",
+        "country": "Pakistan",
+        "postalCode": ""
+      },
+      "items": [
+        {
+          "product": {
+            "id": "demo-2",
+            "name": "Oud Noir",
+            "price": 1250
+          },
+          "quantity": 1
+        }
+      ],
+      "subtotal": 0,
+      "discount": 0,
+      "shipping": 0,
+      "tax": 0,
+      "total": 1250,
+      "paymentMethod": "Cash on Delivery",
+      "status": "Rejected",
+      "trackingNumber": "AVR-PK-9120747",
+      "courierPartner": "TCS White-Glove VIP Courier",
+      "deliveryNotes": "",
+      "rejectedAt": "2026-11-12T12:08:36.403Z",
+      "rejectionReason": "Out of allocation for this delivery cycle"
+    },
+    {
+      "id": "ord-1794485287553",
+      "orderNumber": "AVR-63286",
+      "createdAt": "2026-11-12T12:08:07.553Z",
+      "customer": {
+        "name": "Tariq Khan",
+        "email": "tariq@example.com",
+        "phone": "+923001234567",
+        "address": "Gulberg III",
+        "city": "Lahore",
+        "province": "Punjab",
+        "country": "Pakistan",
+        "postalCode": ""
+      },
+      "items": [
+        {
+          "product": {
+            "id": "demo-1",
+            "name": "Tourbillon Sovereign",
+            "price": 48500
+          },
+          "quantity": 1
+        }
+      ],
+      "subtotal": 48500,
+      "discount": 0,
+      "shipping": 0,
+      "tax": 0,
+      "total": 48500,
+      "paymentMethod": "Cash on Delivery",
+      "status": "Approved",
+      "trackingNumber": "AVR-PK-7846187",
+      "courierPartner": "TCS Express White-Glove Logistics",
+      "deliveryNotes": "Sealed serialized vault package",
+      "estimatedDelivery": "2026-11-20",
+      "approvedAt": "2026-11-12T12:08:30.313Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "usr-owner-1",
+      "email": "jawadsajid274@gmail.com",
+      "name": "Jawad Sajid (Owner)",
+      "role": "admin",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80",
+      "provider": "google",
+      "membershipTier": "Founding Executive & Owner",
+      "vipClub": true
+    },
+    {
+      "id": "usr-1794414308841",
+      "email": "testclient@gmail.com",
+      "name": "Test Client",
+      "role": "customer",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=testclient@gmail.com",
+      "provider": "email",
+      "membershipTier": "Private Client",
+      "vipClub": true,
+      "createdAt": "2026-11-11T16:25:08.841Z"
+    },
+    {
+      "id": "usr-super-owner-1",
+      "email": "jawadsajid124@gmail.com",
+      "name": "Jawad Sajid (Primary Super Owner)",
+      "role": "super_owner",
+      "superOwnerType": "owner1",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=jawadsajid124@gmail.com",
+      "provider": "google",
+      "membershipTier": "Founding Executive & Primary Super Owner",
+      "vipClub": true,
+      "createdAt": "2026-11-11T16:25:21.770Z"
+    }
+  ],
+  "subscribers": [],
+  "teamMembers": [],
+  "ownership": {
+    "owner1": {
+      "id": "owner-1",
+      "type": "gmail",
+      "identifier": "jawadsajid124@gmail.com",
+      "normalizedIdentifier": "jawadsajid124@gmail.com",
+      "backupEmail": "jawadsajid274@gmail.com",
+      "name": "Jawad Sajid (Primary Super Owner - Gmail)",
+      "status": "ACTIVE",
+      "verifiedAt": "2026-11-11T09:53:13.406Z",
+      "uid": "usr-super-owner-1",
+      "lastLoginAt": "2026-11-11T16:25:21.769Z"
+    },
+    "owner2": {
+      "id": "owner-2",
+      "type": "phone",
+      "identifier": "+92 305 6674374",
+      "normalizedIdentifier": "+923056674374",
+      "name": "Jawad Sajid (Primary Super Owner - Phone)",
+      "status": "ACTIVE",
+      "verifiedAt": "2026-11-11T09:53:22.065Z",
+      "uid": "usr-super-owner-2",
+      "lastLoginAt": "2026-11-11T16:25:29.008Z"
+    },
+    "auditLog": [
+      {
+        "id": "audit-1794414329008",
+        "timestamp": "2026-11-11T16:25:29.008Z",
+        "ownerType": "owner2",
+        "action": "LOGIN",
+        "actor": "Owner 2 (+92 305 6674374)",
+        "ip": "127.0.0.1"
+      },
+      {
+        "id": "audit-1794414321769",
+        "timestamp": "2026-11-11T16:25:21.769Z",
+        "ownerType": "owner1",
+        "action": "LOGIN",
+        "actor": "Owner 1 (jawadsajid124@gmail.com)",
+        "ip": "127.0.0.1"
+      },
+      {
+        "id": "audit-1794390802065",
+        "timestamp": "2026-11-11T09:53:22.065Z",
+        "ownerType": "owner2",
+        "action": "IDENTITY_UPDATED",
+        "oldIdentifier": "+92 305 6674374",
+        "newIdentifier": "+92 305 6674374",
+        "actor": "Owner 2 (+923056674374)",
+        "ip": "127.0.0.1"
+      },
+      {
+        "id": "audit-1794390802017",
+        "timestamp": "2026-11-11T09:53:22.017Z",
+        "ownerType": "owner2",
+        "action": "LOGIN",
+        "actor": "Owner 2 (+92 305 6674374)",
+        "ip": "127.0.0.1"
+      },
+      {
+        "id": "audit-1794390793406",
+        "timestamp": "2026-11-11T09:53:13.406Z",
+        "ownerType": "owner1",
+        "action": "IDENTITY_UPDATED",
+        "oldIdentifier": "jawadsajid124@gmail.com",
+        "newIdentifier": "jawadsajid124@gmail.com",
+        "actor": "Owner 1 (jawadsajid124@gmail.com)",
+        "ip": "127.0.0.1"
+      },
+      {
+        "id": "audit-1794390793343",
+        "timestamp": "2026-11-11T09:53:13.343Z",
+        "ownerType": "owner2",
+        "action": "LOGIN",
+        "actor": "Owner 2 (+92 305 6674374)",
+        "ip": "127.0.0.1"
+      },
+      {
+        "id": "audit-1794390793292",
+        "timestamp": "2026-11-11T09:53:13.292Z",
+        "ownerType": "owner1",
+        "action": "LOGIN",
+        "actor": "Owner 1 (jawadsajid124@gmail.com)",
+        "ip": "127.0.0.1"
+      },
+      {
+        "id": "audit-1794390764519",
+        "timestamp": "2026-11-11T09:52:44.519Z",
+        "ownerType": "owner2",
+        "action": "LOGIN",
+        "actor": "Owner 2 (+92 305 6674374)",
+        "ip": "127.0.0.1"
+      },
+      {
+        "id": "audit-1794390757477",
+        "timestamp": "2026-11-11T09:52:37.477Z",
+        "ownerType": "owner1",
+        "action": "LOGIN",
+        "actor": "Owner 1 (jawadsajid124@gmail.com)",
+        "ip": "127.0.0.1"
+      },
+      {
+        "id": "audit-init-1",
+        "timestamp": "2026-11-10T10:00:00.000Z",
+        "ownerType": "owner1",
+        "action": "IDENTITY_UPDATED",
+        "newIdentifier": "jawadsajid124@gmail.com",
+        "actor": "System Initialization"
+      },
+      {
+        "id": "audit-init-2",
+        "timestamp": "2026-11-10T10:00:00.000Z",
+        "ownerType": "owner2",
+        "action": "IDENTITY_UPDATED",
+        "newIdentifier": "+92 305 6674374",
+        "actor": "System Initialization"
+      }
+    ],
+    "updatedAt": "2026-11-11T09:53:22.065Z"
+  },
+  "gallery": [
+    {
+      "id": "gal-1",
+      "title": "Tourbillon Sovereign Haute Horlogerie",
+      "url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80",
+      "category": "Watches",
+      "caption": "Hand-finished titanium case featuring flying tourbillon movement and sapphire exhibition caseback.",
+      "source": "curated",
+      "uploadedAt": "2026-11-10T10:00:00.000Z",
+      "featured": true
+    },
+    {
+      "id": "gal-2",
+      "title": "Bespoke Exotic Leather Bi-Fold",
+      "url": "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=1200&q=80",
+      "category": "Wallets",
+      "caption": "Hand-stitched full-grain calfskin with titanium RFID-shielding inner lining.",
+      "source": "curated",
+      "uploadedAt": "2026-11-10T10:30:00.000Z",
+      "featured": true
+    },
+    {
+      "id": "gal-3",
+      "title": "Damascus Steel & Obsidian Cufflinks",
+      "url": "https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?auto=format&fit=crop&w=1200&q=80",
+      "category": "Accessories",
+      "caption": "Pattern-welded Damascus steel forge-welded with midnight obsidian stones.",
+      "source": "curated",
+      "uploadedAt": "2026-11-10T11:00:00.000Z",
+      "featured": true
+    },
+    {
+      "id": "gal-4",
+      "title": "Oud Noir Extrait de Parfum",
+      "url": "https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=1200&q=80",
+      "category": "Perfumes",
+      "caption": "Rare aged Cambodian agarwood distilled with royal saffron and black amber.",
+      "source": "curated",
+      "uploadedAt": "2026-11-10T11:30:00.000Z",
+      "featured": true
+    },
+    {
+      "id": "gal-5",
+      "title": "Aviator Titanium Polarized Eyewear",
+      "url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1200&q=80",
+      "category": "Sunglasses",
+      "caption": "Ultralight Grade 5 aerospace titanium frame with anti-reflective polarized optics.",
+      "source": "curated",
+      "uploadedAt": "2026-11-10T12:00:00.000Z",
+      "featured": true
+    }
+  ]
+}
